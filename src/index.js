@@ -4,8 +4,8 @@ FBInstant.initializeAsync().then(function() {
         type: Phaser.AUTO,
         width: window.innerWidth,
         height: window.innerHeight,
-        backgroundColor: '#222448',
-        scene: [Preloader, GameScene]
+        backgroundColor: '#bfcc00',
+        scene: [Preloader, GamePlay, About]
     };
 
     new Phaser.Game(config);

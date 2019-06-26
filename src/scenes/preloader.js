@@ -13,15 +13,14 @@ class Preloader extends Phaser.Scene {
         this.load.image('stats', 'src/assets/stats.png');
         this.load.bitmapFont('short', 'src/assets/short-stack.png', 'src/assets/short-stack.xml');
         this.load.bitmapFont('azo', 'src/assets/azo-fire.png', 'src/assets/azo-fire.xml');
+        this.load.image('food', 'src/assets/food.png');
+        this.load.image('body', 'src/assets/body.png');
 
     }
 
     startGame() {
-        // this.scene.start('MainMenu');
-        this.scene.start('GameScene');
-        // this.scene.start('GameStats');
-        // this.scene.start('GameData');
-        // this.scene.start('GameShare');
+        this.scene.start('GamePlay');
+        // this.scene.start('GameScene');
     }
 
 }
